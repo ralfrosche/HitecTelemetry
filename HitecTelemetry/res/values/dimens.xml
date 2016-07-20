@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="xLarge">28dp</dimen>
+    <dimen name="pad1">5dp</dimen>
+    <dimen name="xxLarge">54dp</dimen>
+    <dimen name="title">13dp</dimen>
+</resources>

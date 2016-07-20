@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"   android:key="hysteresis"
+        android:title="@string/hysteresis" >
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue50"
+            android:key="voltage_hysteresis"
+            android:title="@string/voltage_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue50"
+            android:key="current_hysteresis"
+            android:title="@string/current_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue10"
+            android:key="rpm_hysteresis"
+            android:title="@string/rpm_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue10"
+            android:key="temperature_hysteresis"
+            android:title="@string/temperature_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue100"
+            android:key="power_hysteresis"
+            android:title="@string/power_hysteresis" />
+
+</PreferenceScreen>

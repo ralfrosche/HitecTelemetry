@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:key="volts"
+        android:title="volts" />
+    <CheckBoxPreference
+        android:key="amps"
+        android:title="amps" />
+    <CheckBoxPreference
+        android:key="Used"
+        android:title="Used" />
+    <CheckBoxPreference
+        android:key="receiverVoltage"
+        android:title="receiverVoltage" />
+    <CheckBoxPreference
+        android:key="powers"
+        android:title="power" />
+    <CheckBoxPreference
+        android:key="speeds"
+        android:title="speed" />
+    <CheckBoxPreference
+        android:key="altitudes"
+        android:title="altitude" />
+    <CheckBoxPreference
+        android:key="rpm1"
+        android:title="rpm1" />
+    <CheckBoxPreference
+        android:key="temp1"
+        android:title="temp1" />
+    <CheckBoxPreference
+        android:key="temp2"
+        android:title="temp2" />
+    <CheckBoxPreference
+        android:key="rpm2"
+        android:title="rpm2" />
+    <CheckBoxPreference
+        android:key="fuels"
+        android:title="fuel" />
+    <CheckBoxPreference
+        android:key="Servo01"
+        android:title="Servo01" />
+    <CheckBoxPreference
+        android:key="Servo02"
+        android:title="Servo02" />
+    <CheckBoxPreference
+        android:key="Servo03"
+        android:title="Servo03" />
+    <CheckBoxPreference
+        android:key="Servo04"
+        android:title="Servo04" />
+    <CheckBoxPreference
+        android:key="temp5"
+        android:title="temp5" />
+    <CheckBoxPreference
+        android:key="airpressure1"
+        android:title="airpressure1" />
+    <CheckBoxPreference
+        android:key="airpressure2"
+        android:title="airpressure2" />
+    <CheckBoxPreference
+        android:key="speedpressure"
+        android:title="speedpressure" />
+    <CheckBoxPreference
+        android:key="lqi"
+        android:title="lqi" />
+    <CheckBoxPreference
+        android:key="txState"
+        android:title="txState" />
+    <CheckBoxPreference
+        android:key="distance"
+        android:title="distance" />
+    <CheckBoxPreference
+        android:key="gpsCourse"
+        android:title="gpsCourse" />
+
+</PreferenceScreen>

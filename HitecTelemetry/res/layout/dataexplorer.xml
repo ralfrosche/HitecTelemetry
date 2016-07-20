@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/currentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="avaiable logfiles"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="10dp"
+        android:background="#FF0000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <RadioGroup
+            android:id="@+id/files"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            >
+
+     
+
+        </RadioGroup>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/powerType"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/deletebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="delete"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/activatebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="activate"
+            android:textColor="@color/White" />
+
+        <Button
+            android:id="@+id/closebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="close"
+            android:textColor="@color/White" />
+
+    </TableRow>
+
+</LinearLayout>

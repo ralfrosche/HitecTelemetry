@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"          android:key="speech_setup"
+        android:title="speech setup" >
+        <CheckBoxPreference
+            android:key="voltage_speech_ack"
+            android:title="voltage" />
+
+        <EditTextPreference
+            android:defaultValue="Spannung;Wolt"
+            android:key="voltage_speech_text"
+            android:title="voltage text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Spannung zu niedrig"
+            android:key="voltage_speech_alert"
+            android:title="voltage alert" />
+
+        <CheckBoxPreference
+            android:key="height_speech_ack"
+            android:title="height" />
+
+        <EditTextPreference
+            android:defaultValue="höhe;meter"
+            android:key="height_speech_text"
+            android:title="height text" />
+        <EditTextPreference
+            android:defaultValue="Achtung höhe"
+            android:key="height_speech_alert"
+            android:title="height alert" />
+
+        <CheckBoxPreference
+            android:key="current_speech_ack"
+            android:title="current" />
+
+        <EditTextPreference
+            android:defaultValue="Strom;Amper"
+            android:key="current_speech_text"
+            android:title="current text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Strom zu hoch"
+            android:key="current_speech_alert"
+            android:title="current alert" />
+
+        <CheckBoxPreference
+            android:key="used_speech_ack"
+            android:title="used" />
+
+        <EditTextPreference
+            android:defaultValue="Verbrauch;Milli Amper"
+            android:key="used_speech_text"
+            android:title="used text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Verbrauch überschritten"
+            android:key="used_speech_alert"
+            android:title="used alert" />
+
+        <CheckBoxPreference
+            android:key="temp_speech_ack"
+            android:title="temperature 1" />
+
+        <EditTextPreference
+            android:defaultValue="Temperatur;Grad"
+            android:key="temp_speech_text"
+            android:title="temperature 1 text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Temperatur zu hoch"
+            android:key="temp_speech_alert"
+            android:title="temperature 1 alert" />
+
+        <CheckBoxPreference
+            android:key="rpm_speech_ack"
+            android:title="rpm 1" />
+
+        <EditTextPreference
+            android:defaultValue="Drehzahl;Umdrehungen pro Minute"
+            android:key="rpm_speech_text"
+            android:title="rpm 1 text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Drehzahl zu hoch"
+            android:key="rpm_speech_alert"
+            android:title="rpm 1 alert" />
+
+        <CheckBoxPreference
+            android:key="speed_speech_ack"
+            android:title="speed" />
+
+        <EditTextPreference
+            android:defaultValue="Geschwindigkeit;Kilometer pro Stunde"
+            android:key="speed_speech_text"
+            android:title="speed text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Geschwindigkeit"
+            android:key="speed_speech_alert"
+            android:title="speed alert" />
+
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"    android:key="lables"
+        android:title="@string/labels" >
+        <EditTextPreference
+            android:key="label_rpm1"
+            android:title="@string/label_rpm2" />
+        <EditTextPreference
+            android:key="label_rpm2"
+            android:title="@string/label_rpm1" />
+        <EditTextPreference
+            android:key="label_temp1"
+            android:title="@string/label_temp1" />
+        <EditTextPreference
+            android:key="label_temp2"
+            android:title="@string/label_temp2" />
+</PreferenceScreen>

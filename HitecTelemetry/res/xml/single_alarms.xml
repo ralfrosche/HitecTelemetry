@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"    android:key="single_alarms"
+        android:title="@string/single_alarms" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_voltage"
+            android:title="@string/alarm_voltage" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_current"
+            android:title="@string/alarm_current" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_speed"
+            android:title="@string/alarm_speed" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_fuel"
+            android:title="@string/alarm_fuel" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_temperature"
+            android:title="@string/alarm_temperature" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_altitude"
+            android:title="@string/alarm_altitude" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_rpm"
+            android:title="@string/alarm_rpm" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_power"
+            android:title="@string/alarm_power" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_used"
+            android:title="@string/used_cap" />
+
+</PreferenceScreen>

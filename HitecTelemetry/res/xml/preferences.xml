@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen
+        android:key="threshold"
+        android:title="@string/threshold" 
+        android:icon="@drawable/edit_query">
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue00"
+            android:key="voltage"
+            android:title="@string/volage" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue100"
+            android:key="current"
+            android:title="@string/current" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue100"
+            android:key="temperature"
+            android:title="@string/temperature" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue300"
+            android:key="altitude"
+            android:title="@string/altitude" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue10000"
+            android:key="rpm"
+            android:title="@string/rpm" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue300"
+            android:key="speed"
+            android:title="@string/speed" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue00"
+            android:key="fuel"
+            android:title="@string/fuel" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue1000"
+            android:key="power"
+            android:title="@string/power" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue3000"
+            android:key="used_cap"
+            android:title="used capacity" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="general"
+        android:title="@string/general_preferences"
+        android:icon="@android:drawable/ic_menu_preferences" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_on"
+            android:title="@string/alarms_on" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="speak_on"
+            android:title="speak alarms on" />
+
+        <RingtonePreference
+            android:defaultValue="@raw/alarm"
+            android:key="ringtone"
+            android:ringtoneType="notification|alarm"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="@string/sound_file" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="sound_on"
+            android:title="@string/sound" />
+
+        <EditTextPreference
+            android:defaultValue="@string/default_device"
+            android:key="bluetooth_device"
+            android:title="@string/bluetooth_device" />
+        <EditTextPreference
+            android:defaultValue="@string/default_log_file"
+            android:key="log_file"
+            android:title="@string/log_file" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="logging_on"
+            android:title="@string/logging_on" />
+        <CheckBoxPreference
+            android:key="speech_on"
+            android:title="speech on" />
+
+        <EditTextPreference
+            android:defaultValue="10000"
+            android:key="speech_intervall"
+            android:title="speech intervall ms" />
+        <EditTextPreference
+            android:defaultValue="10000"
+            android:key="speech_alert_intervall"
+            android:title="speech alert intervall ms" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="speech_volume"
+            android:title="speech volume (%)" />
+
+        <CheckBoxPreference
+            android:key="vibrate_on"
+            android:title="vibrate" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="metric"
+            android:title="use metric units" />
+        <CheckBoxPreference android:key="auto_connect" android:defaultValue="false" android:title="auto connect"/>
+        <CheckBoxPreference android:defaultValue="false" android:key="mpx_data" android:title="MPXdata format"/>
+        <CheckBoxPreference android:title="display always on" android:key="displayAlwaysOn" android:defaultValue="false"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="lables"
+        android:title="@string/labels" 
+        android:icon="@drawable/ic_menu_archive">
+        <EditTextPreference
+            android:key="label_rpm1"
+            android:title="@string/label_rpm2" />
+        <EditTextPreference
+            android:key="label_rpm2"
+            android:title="@string/label_rpm1" />
+        <EditTextPreference
+            android:key="label_temp1"
+            android:title="@string/label_temp1" />
+        <EditTextPreference
+            android:key="label_temp2"
+            android:title="@string/label_temp2" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="units"
+        android:title="@string/units" >
+        <EditTextPreference
+            android:key="unit_rpm1"
+            android:title="@string/unit_rpm1" />
+        <EditTextPreference
+            android:key="unit_rpm2"
+            android:title="@string/unit_rpm2" />
+        <EditTextPreference
+            android:key="unit_temp1"
+            android:title="@string/unit_temp1" />
+        <EditTextPreference
+            android:key="unit_temp2"
+            android:title="@string/unit_temp2" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="single_alarms"
+        android:title="@string/single_alarms" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_voltage"
+            android:title="@string/alarm_voltage" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_current"
+            android:title="@string/alarm_current" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_speed"
+            android:title="@string/alarm_speed" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_fuel"
+            android:title="@string/alarm_fuel" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_temperature"
+            android:title="@string/alarm_temperature" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_altitude"
+            android:title="@string/alarm_altitude" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_rpm"
+            android:title="@string/alarm_rpm" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_power"
+            android:title="@string/alarm_power" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_used"
+            android:title="@string/used_cap" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="speak_alarms"
+        android:title="speak alarms" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_voltage"
+            android:title="@string/alarm_voltage" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_current"
+            android:title="@string/alarm_current" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_speed"
+            android:title="@string/alarm_speed" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_fuel"
+            android:title="@string/alarm_fuel" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_temperature"
+            android:title="@string/alarm_temperature" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_altitude"
+            android:title="@string/alarm_altitude" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_rpm"
+            android:title="@string/alarm_rpm" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_power"
+            android:title="@string/alarm_power" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="speak_used"
+            android:title="@string/used_cap" />
+    </PreferenceScreen>
+    <PreferenceScreen
+         android:key="hysteresis"
+        android:title="@string/hysteresis" 
+         android:icon="@drawable/edit_query">
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue50"
+            android:key="voltage_hysteresis"
+            android:title="@string/voltage_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue50"
+            android:key="current_hysteresis"
+            android:title="@string/current_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue10"
+            android:key="rpm_hysteresis"
+            android:title="@string/rpm_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue10"
+            android:key="temperature_hysteresis"
+            android:title="@string/temperature_hysteresis" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue100"
+            android:key="power_hysteresis"
+            android:title="@string/power_hysteresis" />
+    </PreferenceScreen>
+    <PreferenceScreen
+          android:key="sensor_settings"
+        android:title="@string/sensor_settings" >
+        <ListPreference
+            android:defaultValue="@string/default_sensor_type"
+            android:entries="@array/entries_current_sensor_preference"
+            android:entryValues="@array/entryvalue_current_sensor_preference"
+            android:key="current_sensor_type"
+            android:title="@string/current_sensor_type" android:dialogTitle="choose sensor type"/>
+    </PreferenceScreen>
+    <PreferenceScreen
+                android:key="speech_setup"
+        android:title="speech setup" 
+        android:icon="@drawable/ic_btn_speak_now">
+        <CheckBoxPreference
+            android:key="voltage_speech_ack"
+            android:title="voltage" />
+
+        <EditTextPreference
+            android:defaultValue="Spannung;Wolt"
+            android:key="voltage_speech_text"
+            android:title="voltage text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Spannung zu niedrig"
+            android:key="voltage_speech_alert"
+            android:title="voltage alert" />
+
+        <CheckBoxPreference
+            android:key="height_speech_ack"
+            android:title="height" />
+
+        <EditTextPreference
+            android:defaultValue="höhe;meter"
+            android:key="height_speech_text"
+            android:title="height text" />
+        <EditTextPreference
+            android:defaultValue="Achtung höhe"
+            android:key="height_speech_alert"
+            android:title="height alert" />
+
+        <CheckBoxPreference
+            android:key="current_speech_ack"
+            android:title="current" />
+
+        <EditTextPreference
+            android:defaultValue="Strom;Amper"
+            android:key="current_speech_text"
+            android:title="current text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Strom zu hoch"
+            android:key="current_speech_alert"
+            android:title="current alert" />
+
+        <CheckBoxPreference
+            android:key="used_speech_ack"
+            android:title="used" />
+
+        <EditTextPreference
+            android:defaultValue="Verbrauch;Milli Amper"
+            android:key="used_speech_text"
+            android:title="used text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Verbrauch überschritten"
+            android:key="used_speech_alert"
+            android:title="used alert" />
+
+        <CheckBoxPreference
+            android:key="temp_speech_ack"
+            android:title="temperature 1" />
+
+        <EditTextPreference
+            android:defaultValue="Temperatur;Grad"
+            android:key="temp_speech_text"
+            android:title="temperature 1 text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Temperatur zu hoch"
+            android:key="temp_speech_alert"
+            android:title="temperature 1 alert" />
+
+        <CheckBoxPreference
+            android:key="rpm_speech_ack"
+            android:title="rpm 1" />
+
+        <EditTextPreference
+            android:defaultValue="Drehzahl;Umdrehungen pro Minute"
+            android:key="rpm_speech_text"
+            android:title="rpm 1 text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Drehzahl zu hoch"
+            android:key="rpm_speech_alert"
+            android:title="rpm 1 alert" />
+
+        <CheckBoxPreference
+            android:key="speed_speech_ack"
+            android:title="speed" />
+
+        <EditTextPreference
+            android:defaultValue="Geschwindigkeit;Kilometer pro Stunde"
+            android:key="speed_speech_text"
+            android:title="speed text" />
+        <EditTextPreference
+            android:defaultValue="Achtung Geschwindigkeit"
+            android:key="speed_speech_alert"
+            android:title="speed alert" />
+    </PreferenceScreen>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="vario_setup" android:title="vario setup"
+         android:icon="@drawable/ic_lock_airplane_mode">
+        <ListPreference android:icon="@drawable/ic_menu_recent_history" android:dialogTitle="choose vario delay" android:title="vario delay (ms)" android:key="vario_delay" android:entries="@array/entries_vario_delay" android:entryValues="@array/entries_values_vario_delay"/>
+    </PreferenceScreen>
+
+</PreferenceScreen>

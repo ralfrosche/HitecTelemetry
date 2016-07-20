@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TableRow
+                    android:id="@+id/airpressure2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/airpressure2label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/xLarge" />
+
+                    <TextView
+                        android:id="@+id/airpressure2value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/pad1"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/xxLarge" />
+
+                    <TextView
+                        android:id="@+id/airpressure2unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/pad1"
+                        android:text="m"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/airpressure1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/airpressure1label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ClimbR:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/xLarge" />
+
+                    <TextView
+                        android:id="@+id/airpressure1value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/pad1"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/xxLarge" />
+
+                    <TextView
+                        android:id="@+id/airpressure1unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/pad1"
+                        android:text="m/s"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/speedpressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/speedpressurelabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SpeedP:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/xLarge" />
+
+                    <TextView
+                        android:id="@+id/speedpressurevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/pad1"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="@dimen/xxLarge" />
+
+                    <TextView
+                        android:id="@+id/speedpressureunit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/pad1"
+                        android:text="km/h"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensitivity"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <RadioGroup
+                    android:id="@+id/sensitivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+           
+                    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="low"
+        android:onClick="onRadioButtonClicked" />
+
+    <RadioButton
+        android:id="@+id/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="medium" 
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:id="@+id/high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="high" 
+        android:onClick="onRadioButtonClicked"/>
+</RadioGroup>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+<RadioGroup
+    android:id="@+id/volume"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/highV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="high"
+        android:onClick="onRadioButtonVolumeClicked" />
+    <RadioButton
+        android:id="@+id/mediumV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="medium" 
+        android:onClick="onRadioButtonVolumeClicked"/>
+    
+    <RadioButton
+        android:id="@+id/lowV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="low" 
+        android:onClick="onRadioButtonVolumeClicked"/>
+
+    <RadioButton
+        android:id="@+id/muteV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mute" 
+        android:onClick="onRadioButtonVolumeClicked"/>
+</RadioGroup>
+</LinearLayout>

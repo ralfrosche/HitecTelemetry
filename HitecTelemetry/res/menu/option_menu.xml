@@ -1,0 +1,91 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/connect"
+        android:icon="@drawable/bluetooth"
+        android:showAsAction="ifRoom"
+        android:title="@string/connect">
+    </item>
+    <item
+        android:id="@+id/menu_speech_test"
+        android:icon="@drawable/ic_lock_silent_mode_off"
+        android:title="test speech">
+    </item>
+    <item
+        android:id="@+id/menu_log"
+        android:icon="@drawable/ic_menu_save"
+        android:title="@string/log_on">
+    </item>
+    <item
+        android:id="@+id/id_menu_vario"
+        android:icon="@drawable/ic_lock_airplane_mode"
+        android:title="vario">
+    </item>
+        <item
+        android:id="@+id/id_menu_instrument"
+        android:icon="@drawable/instrument"
+        android:title="instruments">
+    </item>
+    <item
+        android:id="@+id/preferences"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:showAsAction="ifRoom"
+        android:title="@string/preferences">
+    </item>
+    <item
+        android:id="@+id/menu_maps"
+        android:icon="@drawable/perm_group_location"
+        android:title="find model">
+    </item>
+    <item
+        android:id="@+id/menu_launch_profile"
+        android:icon="@drawable/ic_menu_allfriends"
+        android:title="load profile">
+    </item>
+    <item
+        android:id="@+id/menu_profile_editor"
+        android:icon="@drawable/ic_menu_allfriends"
+        android:title="profile editor">
+    </item>
+    <item
+        android:id="@+id/menu_save_profile"
+        android:icon="@drawable/ic_menu_allfriends"
+        android:title="save profile">
+    </item>
+    <item
+        android:id="@+id/menu_data_explorer"
+        android:icon="@drawable/ic_menu_archive"
+        android:title="@string/dataexplorer">
+    </item>
+    <item
+        android:id="@+id/menu_graph"
+        android:icon="@drawable/chart4"
+        android:title="@string/graph">
+    </item>
+    <item
+        android:id="@+id/id_menu_vario_test"
+        android:icon="@drawable/ic_lock_airplane_mode"
+        android:title="vario test">
+    </item>
+    <item
+        android:id="@+id/menu_backup"
+        android:icon="@drawable/ic_menu_archive"
+        android:title="backup database">
+    </item>
+    <item
+        android:id="@+id/menu_special_keys"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/version">
+    </item>
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/ic_menu_help"
+        android:title="just help">
+    </item>
+        <item
+        android:id="@+id/speakService"
+        android:icon="@drawable/aurora2"
+        android:title="start service">
+    </item>
+
+</menu>

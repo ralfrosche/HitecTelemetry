@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="general" >
+        <extra
+            android:name="pref-resource"
+            android:value="general" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@drawable/edit_query"
+        android:title="threshold" >
+        <extra
+            android:name="pref-resource"
+            android:value="threshold" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="single alarms" >
+        <extra
+            android:name="pref-resource"
+            android:value="single_alarms" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@drawable/ic_lock_silent_mode_off"
+        android:title="speak alarms" >
+        <extra
+            android:name="pref-resource"
+            android:value="speak_alarms" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@drawable/ic_menu_archive"
+        android:title="units" >
+        <extra
+            android:name="pref-resource"
+            android:value="units" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@drawable/ic_menu_archive"
+        android:title="lables" >
+        <extra
+            android:name="pref-resource"
+            android:value="lables" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@drawable/edit_query"
+        android:title="hysteresis" >
+        <extra
+            android:name="pref-resource"
+            android:value="hysteresis" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="sensor settings" >
+        <extra
+            android:name="pref-resource"
+            android:value="sensor_settings" />
+    </header>
+       <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@drawable/edit_query"
+        android:title="sensor view" >
+        <extra
+            android:name="pref-resource"
+            android:value="sensor_view" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+       	android:icon="@drawable/ic_btn_speak_now"
+        android:title="speech setup" >
+        <extra
+            android:name="pref-resource"
+            android:value="speech_setup" />
+    </header>
+    <header
+        android:fragment="de.rosche.spectraTelemetry.TermPreferences$PrefsFragment"
+        android:icon="@drawable/ic_lock_airplane_mode"
+        android:title="vario setup" >
+        <extra
+            android:name="pref-resource"
+            android:value="vario_setup" />
+    </header>
+</preference-headers>

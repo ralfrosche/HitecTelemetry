@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+
+        android:key="general"
+        android:title="@string/general_preferences" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_on"
+            android:title="@string/alarms_on" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="speak_on"
+            android:title="speak alarms on" />
+
+        <RingtonePreference
+            android:defaultValue="@raw/alarm"
+            android:key="ringtone"
+            android:ringtoneType="notification|alarm"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="@string/sound_file" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="sound_on"
+            android:title="@string/sound" />
+
+        <EditTextPreference
+            android:defaultValue="@string/default_device"
+            android:key="bluetooth_device"
+            android:title="@string/bluetooth_device" />
+        <EditTextPreference
+            android:defaultValue="@string/default_log_file"
+            android:key="log_file"
+            android:title="@string/log_file" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="logging_on"
+            android:title="@string/logging_on" />
+        <CheckBoxPreference
+            android:key="speech_on"
+            android:title="speech on" />
+
+        <EditTextPreference
+            android:defaultValue="10000"
+            android:key="speech_intervall"
+            android:title="speech intervall ms" />
+        <EditTextPreference
+            android:defaultValue="10000"
+            android:key="speech_alert_intervall"
+            android:title="speech alert intervall ms" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="speech_volume"
+            android:title="speech volume (%)" />
+
+        <CheckBoxPreference
+            android:key="vibrate_on"
+            android:title="vibrate" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="metric"
+            android:title="use metric units" />
+        <CheckBoxPreference android:key="auto_connect" android:defaultValue="false" android:title="auto connect"/>
+        <CheckBoxPreference android:defaultValue="false" android:key="mpx_data" android:title="MPX data format"/>
+        <CheckBoxPreference android:title="display always on" android:defaultValue="false" android:key="displayAlwaysOn"/>
+    </PreferenceScreen>

@@ -1,0 +1,805 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical" >
+
+    <TableLayout
+        android:id="@+id/sensorTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/pad1" >
+
+        <TableRow
+            android:id="@+id/volts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/voltLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volts:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/voltsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/voltunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="V"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/voltageType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-60px"
+                android:layout_marginTop="-40px"
+                android:text="live"
+                android:textColor="@color/White"
+                android:textSize="@dimen/title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/amps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ampsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amps:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/currentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/curretunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="A"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/currentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-60px"
+                android:layout_marginTop="-40px"
+                android:text="live"
+                android:textColor="@color/White"
+                android:textSize="@dimen/title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/usedlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/usedvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/usedunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="mA"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+          <TableRow
+            android:id="@+id/receiverVoltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/receiverVoltageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RVolt:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/receiverVoltageValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/receiverVoltageunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="V"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         </TableRow>
+        
+
+        <TableRow
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/powerLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/powerValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/powerunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="W"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/powerType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-60px"
+                android:layout_marginTop="-40px"
+                android:text="live"
+                android:textColor="@color/White"
+                android:textSize="@dimen/title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/speedLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/speedValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/speedunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="km/h"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/altLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alt:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/altValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/altunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rpm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/rpm1Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RPM2:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/rpm1Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/rpm1unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="U/min"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tempLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temp1:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/tempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/tempunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="°C"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/temp2Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temp2:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/temp2Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/temp2unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="°C"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rpm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/rpm2Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RPM1:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/rpm2Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/rpm2unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="U/min"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        
+   
+    
+    
+        <TableRow
+            android:id="@+id/fuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/fuelLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fuel:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/fuelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/fuelunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="%"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Servo01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/servo1label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servo1:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/servo1value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/servo1unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="mA"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Servo02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/servo2label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servo2:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/servo2value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/servo2unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="mA"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Servo03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/servo3label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servo3:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/servo3value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/servo3unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="mA"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Servo04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/servo4label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servo4:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/servo4value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/servo4unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="mA"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/temp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/temp5label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temp5:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/temp5value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/temp5unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="°C"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/airpressure1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/airpressure1label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ClimbR:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/airpressure1value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/airpressure1unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="m/s"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/airpressure2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/airpressure2label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/airpressure2value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/airpressure2unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/heightType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-60px"
+                android:layout_marginTop="-40px"
+                android:text="live"
+                android:textColor="@color/White"
+                android:textSize="@dimen/title" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/speedpressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/speedpressurelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SpeedP:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/speedpressurevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/speedpressureunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="km/h"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/lqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lqiLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LQI:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/lqiValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/lqiUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="%"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/txState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txStateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TxState:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/txStateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/txStateUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/distanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dist:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/distanceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/distanceUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+          <TableRow
+            android:id="@+id/gpsCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/gpsCourseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPSCourse:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xLarge" />
+
+            <TextView
+                android:id="@+id/gpsCourseValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/xxLarge" />
+
+            <TextView
+                android:id="@+id/gpsCourseUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad1"
+                android:text="°"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+      
+    </TableLayout>
+
+</ScrollView>

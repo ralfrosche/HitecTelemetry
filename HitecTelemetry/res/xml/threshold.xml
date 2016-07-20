@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+            android:key="threshold"
+        android:title="@string/threshold" >
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue00"
+            android:key="voltage"
+            android:title="@string/volage" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue100"
+            android:key="current"
+            android:title="@string/current" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue100"
+            android:key="temperature"
+            android:title="@string/temperature" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue300"
+            android:key="altitude"
+            android:title="@string/altitude" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue10000"
+            android:key="rpm"
+            android:title="@string/rpm" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue300"
+            android:key="speed"
+            android:title="@string/speed" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue00"
+            android:key="fuel"
+            android:title="@string/fuel" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue1000"
+            android:key="power"
+            android:title="@string/power" />
+        <EditTextPreference
+            android:defaultValue="@string/defaultValue3000"
+            android:key="used_cap"
+            android:title="used capacity" />
+
+</PreferenceScreen>

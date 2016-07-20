@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="vario_setup" android:title="vario setup">
+        <ListPreference android:icon="@drawable/ic_menu_recent_history" android:dialogTitle="choose vario delay" android:title="vario delay (ms)" android:key="vario_delay" android:entries="@array/entries_vario_delay" android:entryValues="@array/entries_values_vario_delay"/>
+</PreferenceScreen>

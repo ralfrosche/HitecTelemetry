@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"     android:key="units"
+        android:title="@string/units" >
+        <EditTextPreference
+            android:key="unit_rpm1"
+            android:title="@string/unit_rpm1" />
+        <EditTextPreference
+            android:key="unit_rpm2"
+            android:title="@string/unit_rpm2" />
+        <EditTextPreference
+            android:key="unit_temp1"
+            android:title="@string/unit_temp1" />
+        <EditTextPreference
+            android:key="unit_temp2"
+            android:title="@string/unit_temp2" />
+
+</PreferenceScreen>
